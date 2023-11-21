@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Overpass';
+    src: url(font/Overpass-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass';
+    box-sizing: border-box;
+}
+
+:root {
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-Dark-Blue);
+}
+
+.container {
+    width: 315px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 25px;
+    border-radius: 22px;
+    color: #fff;
+    background-color: var(--Dark-Blue);
+    transition: all 0.5s ease-in-out;
+}
+
+.container .icon-star-box {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    border-radius: 50%;
+    background-color: hsl(216deg 12% 54% / 18%);
+}
+
+
+.container .rating-paragraph {
+    margin: 10px 0 20px 0;
+    font-size: 15px;
+    color: var(--Light-Grey);
+
+}
+
+.container .rating-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.rating-box .the-rating-Number {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    color: var(--Light-Grey);
+    background-color: hsl(216deg 12% 54% / 18%);
+    cursor: pointer;
+    transition-duration: .4s;
+}
+
+.warning-text {
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 12px;
+    text-align: center;
+    color: red;
+}
+
+.the-rating-Number:hover {
+    color: #fff;
+    background-color: var(--Medium-Grey);
+}
+
+.container .submit-btn {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: var(--Orange);
+    cursor: pointer;
+    transition: all, 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.submit-btn:hover {
+    color: var(--Orange);
+    background-color: #fff;
+}
+
+/* result card style */
+
+.illustration-thank {
+    scale: .8;
+}
+
+.rating-result-box {
+    margin: 15px 0 25px 0;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 14px;
+    color: var(--Orange);
+    background-color: hsl(216deg 12% 54% / 18%);
+
+}
+
+.thank-paragraph {
+    margin: 10px 0 15px 0;
+    text-align: center;
+    font-size: 14px;
+    color: var(--Light-Grey);
+
+}
